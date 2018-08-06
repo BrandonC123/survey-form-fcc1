@@ -1,12 +1,59 @@
-<script>https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js</script>
+<!DOCTYPE html>
 <head>
   <title>Survey CH</title>
 </head>
+<body>
+	<style type="text/css">
+		body{
+			background-color: gray;
+		}
+		#name{
+			text-align: center; 
+		}
+		#labeltext{
+			color: green;
+		}
+		#comments{
+			height: 100px;
+			width: 250px;
+		}
+	</style>
 <h1 id="title">Survey Form Challenge</h1>
 <p id="description">This is exmaple text for survey form challenge</p>
+
 <form id="Survey Form">
+	<div>
+	<label for="txtfrradbut" id="labeltext">By submitting this survey you agree to allow use of information inputted</label>
+	<div>
+		<label>Yes, of course<input type="radio"  value="1" name="radio-buttons" class="txtfrradbut"></label>
+	</div>
+	<div>
+		<label>NO<input type="radio"  value="2" name="radio-buttons" class="txtfrradbut"></label>
+	</div>
+	<div>
   <input type="text" name="Name" id="name" class="input-field" placeholder="Input Your Name" required>
+</div>
+<div>
    <input type="text" name="Email" id="email" class="input-field" placeholder="Input Your Email" required>
-   <input type="text" name="Number" id="number" class="input-field" placeholder="Input a Number" required>
+   </div>
+   <input type="number" name="Number" min="10" max="10000" id="number" class="input-field" placeholder="Input a Number" required>
+   <div>
+   <select id="dropdown" >
+   	<option disabled value>Select one Below</option>
+   	<option  value="student">Student</option>
+      <option value="job">Full Time Job</option>
+      <option value="learner">Full Time Learner</option>
+   </select>
+</div>
+<div>
+	<label>Last words and improvements after finishing survey is always appreciated</label>
+</div>
+<div>
+	<textarea id="comments" class="input-field" placeholder="Type Here">
+	</textarea>
+</div>
+   <button id="submit">Submit</button>
+
 </form>
+</body>
 
